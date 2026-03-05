@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="container mx-auto min-h-screen text-[#484293] bg-[#FDFBF0] flex flex-row"
+      className="w-full mx-auto min-h-screen text-[#484293] bg-[#FDFBF0] flex flex-row"
     >
       <div className="flex min-h-full"></div>
       <div className=" gap-4 p-8 text-left">

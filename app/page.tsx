@@ -3,26 +3,27 @@ import Header from "./header";
 import About from "./about";
 import Services from "./services";
 import "../styles/global.css";
+import Footer from "./footer";
 
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto bg-gradient-to-b from-[#e88b7c] via-[#b79bb2] to-[#efe9e6] ">
+      <div className="w-full bg-gradient-to-b from-[#e88b7c] via-[#b79bb2] to-[#efe9e6] overflow-x-hidden">
         <Header />
         <main>
-          <div className="flex flex-row justify-between items-center mt-4 text-white min-h-screen">
-            <div className="w-1/2">
-              <h1 className="text-transform: lowercase font-mono font-semibold text-8xl">
+          <div className="px-16 flex flex-row justify-between items-center mt-4 text-white min-h-screen max-h-screen">
+            <div className="max-w-1/2 ml-16 sm:w-full">
+              <h1 className="text-transform: lowercase font-mono font-semibold sm:text-lg md:text-7xl">
                 Studio kreatywne
               </h1>
-              <p className="font-serif --font-gloock text-6xl">
+              <p className="font-serif --font-gloock text-4xl">
                 z którym opowiesz swoją historie
               </p>
-              <button className="px-4 py-1 border-white border rounded-tr-lg rounded-bl-lg mt-4">
+              <button className="px-8 py-1 mt-8 text-smaller border-white border rounded-tr-lg rounded-bl-lg hover:bg-white hover:text-[#e88b7c] transition-colors duration-300">
                 poznaj ofertę
               </button>
             </div>
-            <div className="relative w-[360px] h-[260px] overflow-hidden max-w-1/2">
+            <div className="md:relative w-[360px] h-[260px] max-w-1/2">
               <div
                 className="absolute 
                   w-[220px] h-[220px]
@@ -39,7 +40,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex flex-row text-[#484293]">
+          <div className="pl-16 flex flex-row text-[#484293]">
             <div>
               <p className="text-6xl font-bold ">+100</p>
               <p>
@@ -70,6 +71,7 @@ export default function Home() {
       </div>
       <About />
       <Services />
+      <Footer />
     </>
   );
 }
