@@ -1,65 +1,75 @@
 import Image from "next/image";
+import Header from "./header";
+import About from "./about";
+import Services from "./services";
+import "../styles/global.css";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <div className="container mx-auto bg-gradient-to-b from-[#e88b7c] via-[#b79bb2] to-[#efe9e6] ">
+        <Header />
+        <main>
+          <div className="flex flex-row justify-between items-center mt-4 text-white min-h-screen">
+            <div className="w-1/2">
+              <h1 className="text-transform: lowercase font-mono font-semibold text-8xl">
+                Studio kreatywne
+              </h1>
+              <p className="font-serif --font-gloock text-6xl">
+                z którym opowiesz swoją historie
+              </p>
+              <button className="px-4 py-1 border-white border rounded-tr-lg rounded-bl-lg mt-4">
+                poznaj ofertę
+              </button>
+            </div>
+            <div className="relative w-[360px] h-[260px] overflow-hidden max-w-1/2">
+              <div
+                className="absolute 
+                  w-[220px] h-[220px]
+                  rounded-full
+                  bg-gradient-to-br from-[#f05a28] to-[#f6a3c2]
+                  left-[20px] top-[10px] z-2"
+              />
+              <div
+                className="absolute 
+                  w-[260px] h-[260px]
+                  rounded-full
+                  border border-white/90
+                  right-[20px] top-[0px] z-1"
+              />
+            </div>
+          </div>
+          <div className="flex flex-row text-[#484293]">
+            <div>
+              <p className="text-6xl font-bold ">+100</p>
+              <p>
+                projektów kreatywnych dla firm, przedsiębiorców i marek
+                osobistych
+              </p>
+            </div>
+
+            <div className="w-1/2 grid grid-cols-5 gap-4 mt-8 grid-rows-3">
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+              <Image src="/projekt1.png" alt="" width={200} height={200} />
+            </div>
+          </div>
+        </main>
+      </div>
+      <About />
+      <Services />
+    </>
   );
 }
