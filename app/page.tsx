@@ -4,6 +4,7 @@ import About from "./about";
 import Services from "./services";
 import "../styles/global.css";
 import Footer from "./footer";
+import Portfolio from "./portfolio";
 
 export default function Home() {
   return (
@@ -19,11 +20,14 @@ export default function Home() {
               <p className="font-serif --font-gloock text-4xl">
                 z którym opowiesz swoją historie
               </p>
-              <button className="px-8 py-1 mt-8 text-smaller border-white border rounded-tr-lg rounded-bl-lg hover:bg-white hover:text-[#e88b7c] transition-colors duration-300">
+              <a
+                href="#services"
+                className="px-8 py-1 mt-8 text-smaller border-white border rounded-tr-3xl rounded-bl-3xl hover:bg-white hover:text-[#e88b7c] transition-colors duration-300"
+              >
                 poznaj ofertę
-              </button>
+              </a>
             </div>
-            <div className="md:relative w-[360px] h-[260px] max-w-1/2">
+            {/* <div className="md:relative w-[360px] h-[260px] max-w-1/2">
               <div
                 className="absolute 
                   w-[220px] h-[220px]
@@ -38,9 +42,9 @@ export default function Home() {
                   border border-white/90
                   right-[20px] top-[0px] z-1"
               />
-            </div>
+            </div> */}
           </div>
-          <div className="pl-16 flex flex-row text-[#484293]">
+          <div className="pl-16 min-h-screen pr-0 flex flex-col md:flex-row text-[#484293] bg-[#FDFBF0]">
             <div>
               <p className="text-6xl font-bold ">+100</p>
               <p>
@@ -71,6 +75,7 @@ export default function Home() {
       </div>
       <About />
       <Services />
+      <Portfolio />
       <Footer />
     </>
   );
