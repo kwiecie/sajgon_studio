@@ -20,27 +20,45 @@ export default function Footer() {
               className="h-7 w-7"
             />
           </Link>
-          <Image
-            src="/facebook_icon.png"
-            alt=""
-            width={30}
-            height={30}
-            className="h-7 w-7"
-          />
-          <Image
-            src="/linkedin_icon.png"
-            alt=""
-            width={30}
-            height={30}
-            className="h-7 w-7"
-          />
-          <Image
-            src="/whatsup_icon.png"
-            alt=""
-            width={30}
-            height={30}
-            className="h-7 w-7"
-          />
+          <Link
+            href="https://www.facebook.com/sajgon.studio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/facebook_icon.png"
+              alt="Facebook"
+              width={30}
+              height={30}
+              className="h-7 w-7"
+            />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/company/sajgon-studio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/linkedin_icon.png"
+              alt="LinkedIn"
+              width={30}
+              height={30}
+              className="h-7 w-7"
+            />
+          </Link>
+          <Link
+            href="https://wa.me/your-number"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/whatsup_icon.png"
+              alt="WhatsApp"
+              width={30}
+              height={30}
+              className="h-7 w-7"
+            />
+          </Link>
         </div>
       </div>
 
