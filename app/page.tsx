@@ -6,6 +6,7 @@ import "../styles/global.css";
 import Footer from "./footer";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
+import Collaboration from "./collaboration";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
           </div>
           <div className="pl-16 min-h-screen pr-0 flex flex-col md:flex-row text-[#484293]">
             <div>
-              <p className="text-6xl font-bold ">+100</p>
+              <p className="text-6xl font-bold font-mono">+100</p>
               <p>
                 projektów kreatywnych dla firm, przedsiębiorców i marek
                 osobistych
@@ -76,6 +77,7 @@ export default function Home() {
       </div>
       <About />
       <Services />
+      <Collaboration />
       <Portfolio />
       <Contact />
       <Footer />
