@@ -31,7 +31,7 @@ export default function Header() {
           <a href="#portfolio" className="hover:opacity-70 transition">
             Portfolio
           </a>
-          <a href="#kontakt" className="hover:opacity-70 transition">
+          <a href="#contact" className="hover:opacity-70 transition">
             Kontakt
           </a>
         </nav>
@@ -83,7 +83,7 @@ export default function Header() {
         <a href="#portfolio" onClick={toggleMenu}>
           Portfolio
         </a>
-        <a href="#kontakt" onClick={toggleMenu}>
+        <a href="#contact" onClick={toggleMenu}>
           Kontakt
         </a>
       </nav>

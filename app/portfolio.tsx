@@ -6,9 +6,9 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="mx-auto bg-[#FDFBF0] min-h-screen text-[#484293] max-w-full"
+      className="mx-0 bg-[#FDFBF0] min-h-screen text-[#484293] max-w-full"
     >
-      <div className="flex flex-col gap-4 p-8 text-left w-full">
+      <div className="flex flex-col gap-4 p-8 text-left max-w-full">
         <h1 className="text-4xl font-mono md:pl-16">Zrealizowane projekty</h1>
 
         <div className="flex flex-col md:flex-row justify-center gap-8 md:px-8 max-w-full">

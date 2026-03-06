@@ -5,19 +5,20 @@ import Services from "./services";
 import "../styles/global.css";
 import Footer from "./footer";
 import Portfolio from "./portfolio";
+import Contact from "./contact";
 
 export default function Home() {
   return (
     <>
-      <div className="w-full bg-gradient-to-b from-[#e88b7c] via-[#b79bb2] to-[#efe9e6] overflow-x-hidden">
+      <div className="w-full bg-linear-to-b from-[#e88b7c] via-[#b79bb2] to-[#FDFBF0] to-30% overflow-x-hidden">
         <Header />
         <main>
-          <div className="px-16 flex flex-row justify-between items-center mt-4 text-white min-h-screen max-h-screen">
+          <div className="px-16 flex flex-row justify-between items-center mt-4 text-white min-h-screen max-h-screen z-3">
             <div className="max-w-1/2 ml-16 sm:w-full">
               <h1 className="text-transform: lowercase font-mono font-semibold sm:text-lg md:text-7xl">
                 Studio kreatywne
               </h1>
-              <p className="font-serif --font-gloock text-4xl">
+              <p className="font-serif --font-gloock text-5xl">
                 z którym opowiesz swoją historie
               </p>
               <a
@@ -27,24 +28,24 @@ export default function Home() {
                 poznaj ofertę
               </a>
             </div>
-            {/* <div className="md:relative w-[360px] h-[260px] max-w-1/2">
+            <div className="relative sm:hidden w-[360px] h-[260px] max-w-1/2">
               <div
                 className="absolute 
                   w-[220px] h-[220px]
                   rounded-full
-                  bg-gradient-to-br from-[#f05a28] to-[#f6a3c2]
-                  left-[20px] top-[10px] z-2"
+                  bg-linear-to-br from-[#f05a28] to-[#f6a3c2]
+                  left-[20px] top-[10px] md:z-2"
               />
               <div
                 className="absolute 
                   w-[260px] h-[260px]
                   rounded-full
                   border border-white/90
-                  right-[20px] top-[0px] z-1"
+                  right-[20px] top-[0px] md:z-1"
               />
-            </div> */}
+            </div>
           </div>
-          <div className="pl-16 min-h-screen pr-0 flex flex-col md:flex-row text-[#484293] bg-[#FDFBF0]">
+          <div className="pl-16 min-h-screen pr-0 flex flex-col md:flex-row text-[#484293]">
             <div>
               <p className="text-6xl font-bold ">+100</p>
               <p>
@@ -76,6 +77,7 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
+      <Contact />
       <Footer />
     </>
   );
