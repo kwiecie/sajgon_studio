@@ -8,11 +8,13 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="relative w-full">
+    <header className="w-full sticky">
       {/*top bar*/}
       <div
         className={`flex justify-between items-center px-6 py-4 md:px-10 transition-colors ${
-          isMenuOpen ? "bg-white text-[#484293]" : "text-white"
+          isMenuOpen
+            ? "bg-white text-[#484293]"
+            : "text-white sticky bg-transparent"
         }`}
       >
         {/*logo*/}

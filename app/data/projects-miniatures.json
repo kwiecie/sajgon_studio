@@ -1,0 +1,55 @@
+{
+  "projects_miniatures": [
+    {
+      "image": "/project-miniatures/square_light_pink.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/przekwit.png",
+      "title": "Plakat filmu Przekwit"
+    },
+    { "image": "/project-miniatures/cytryny.png", "title": "Cytryny" },
+    {
+      "image": "/project-miniatures/square_orange.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/yoga_sesja.png",
+      "title": "Projekt 1"
+    },
+    { "image": "/project-miniatures/carpet.png", "title": "Projekt 1" },
+    {
+      "image": "/project-miniatures/sesja_natka.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/square_light_pink.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/rog_brackiej.png",
+      "title": "Róg Brackiej i Reformackiej"
+    },
+    { "image": "/project-miniatures/tomato.png", "title": "Tomato" },
+    {
+      "image": "/project-miniatures/square_light_pink.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/kalendarz.png",
+      "title": "Kalendarz"
+    },
+    {
+      "image": "/project-miniatures/sesja_kobieta.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/square_light_blue.png",
+      "title": "Projekt 1"
+    },
+    {
+      "image": "/project-miniatures/square_light_pink.png",
+      "title": "Projekt 1"
+    }
+  ]
+}
