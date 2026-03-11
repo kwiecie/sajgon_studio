@@ -17,7 +17,7 @@ export default function About() {
       </div>
 
       <div className="lg:w-1/2 w-full min-h-full flex flex-col gap-4 p-2 text-left">
-        <h1 className="font-serif lg:text-5xl text-3xl --font-gloock">
+        <h1 className="lg:text-5xl text-3xl --font-gloock">
           W zgodzie z filozofią less is more
         </h1>
         <p className="text-small">

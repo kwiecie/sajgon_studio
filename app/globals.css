@@ -22,6 +22,7 @@
   --color-light-blue: var(--light-blue);
   --font-sans: var(--font-halfre);
   --font-mono: var(--font-geist-mono);
+  --font-halfre: "Halfre", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
