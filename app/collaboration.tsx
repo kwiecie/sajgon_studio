@@ -8,7 +8,7 @@ export default function Collaboration() {
         Jak wygląda współpraca?
       </h2>
 
-      <div className="bg-[dark-orange] h-140 w-[94%]"></div>
+      <div className="bg-dark-orange h-140 w-[94%]"></div>
 
       {/* squares */}
       {/* <div className="absolute right-0 top-70 grid grid-cols-4 gap-2">

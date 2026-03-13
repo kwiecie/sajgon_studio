@@ -39,17 +39,26 @@
   font-style: normal;
 }
 
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
+  /* background: var(--background); */
   color: var(--foreground);
   margin: 0;
   overflow-x: hidden;
   font-family: var(--font-halfre);
+  background-image: url("../public/gradient-image.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {

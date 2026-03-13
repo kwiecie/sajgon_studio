@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import "./globals.css";
+import "../globals.css";
+
+const linkClasses = "h-7 w-7 hover:opacity-70 transition";
 
 export default function Footer() {
   return (
@@ -18,7 +20,7 @@ export default function Footer() {
               alt="Instagram"
               width={30}
               height={30}
-              className="h-7 w-7"
+              className={linkClasses}
             />
           </Link>
           <Link
@@ -31,7 +33,7 @@ export default function Footer() {
               alt="Facebook"
               width={30}
               height={30}
-              className="h-7 w-7"
+              className={linkClasses}
             />
           </Link>
           <Link
@@ -44,7 +46,7 @@ export default function Footer() {
               alt="LinkedIn"
               width={30}
               height={30}
-              className="h-7 w-7"
+              className={linkClasses}
             />
           </Link>
           <Link
@@ -57,7 +59,7 @@ export default function Footer() {
               alt="WhatsApp"
               width={30}
               height={30}
-              className="h-7 w-7"
+              className={linkClasses}
             />
           </Link>
         </div>

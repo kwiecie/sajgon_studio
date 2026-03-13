@@ -14,7 +14,7 @@ export default function Services() {
           </h2>
         </div>
 
-        <div className="max-w-6xl px-30 pt-10 flex flex-col items-center justify-center">
+        <div className="max-w-6xl md:px-30 px-4 pt-10 flex flex-col items-center justify-center">
           {services.map((service, index) => {
             const isOpen = activeIndex === index;
 
@@ -22,7 +22,7 @@ export default function Services() {
               <div key={index} className="mb-10 p-4">
                 <button
                   onClick={() => setActiveIndex(isOpen ? null : index)}
-                  className="w-full grid grid-cols-[60px_1fr_40px] items-center text-left"
+                  className="w-full grid grid-cols-[60px_1fr_40px] text-left cursor-pointer"
                 >
                   <span className="text-accent font-mono text-xl tabular-nums">
                     {(index + 1).toString().padStart(2, "0")}

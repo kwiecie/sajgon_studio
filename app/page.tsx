@@ -1,9 +1,7 @@
-import Header from "./header";
 import About from "./about";
 import Services from "./services";
 import "./globals.css";
 import Image from "next/image";
-import Footer from "./footer";
 import Portfolio from "./portfolio";
 import Contact from "./contact";
 import Collaboration from "./collaboration";
@@ -12,11 +10,10 @@ import projects from "@/app/data/projects-miniatures.json";
 export default function Home() {
   return (
     <>
-      <div className="w-full bg-gradient-to-b from-[#e88b7c] via-[#b79bb2] via-20% to-background overflow-x-hidden">
-        <Header />
+      <div className="w-full  overflow-x-hidden">
         <main>
           <div className="px-16 flex flex-row justify-between items-center mt-4 text-white min-h-screen max-h-screen z-3">
-            <div className="max-w-1/2 ml-16 sm:w-full">
+            <div className="max-w-1/2 ml-16 sm:w-full flex flex-col items-end-safe">
               <h1 className="text-transform: lowercase --font-halfre  text-5xl md:text-7xl p-4">
                 Studio kreatywne
               </h1>
@@ -35,15 +32,15 @@ export default function Home() {
                 className="absolute 
                   w-117 h-117
                   rounded-full
-                  bg-linear-to-br from-[#EA5629] via-[#EA6851] via-[#EA8998] to-[#EA96B4]
-                  left-[20px] top-2 md:z-2"
+                  bg-linear-[105deg] from-[#EA5629] via-[#EA6851] via-[#EA8998] to-[#EA96B4]
+                  left-0 top-15 md:z-2"
               />
               <div
                 className="absolute 
                   w-150 h-150
                   rounded-full
-                  border border-white/90
-                  right-[20px] top-0 md:z-1"
+                  border-2 border-white/90
+                  right-0 top-4 md:z-1"
               />
             </div>
           </div>
@@ -76,7 +73,6 @@ export default function Home() {
       <Collaboration />
       <Portfolio />
       <Contact />
-      <Footer />
     </>
   );
 }
