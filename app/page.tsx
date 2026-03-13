@@ -12,8 +12,8 @@ export default function Home() {
     <>
       <div className="w-full  overflow-x-hidden">
         <main>
-          <div className="px-16 flex flex-row justify-between items-center mt-4 text-white min-h-screen max-h-screen z-3">
-            <div className="max-w-1/2 ml-16 sm:w-full flex flex-col items-end-safe">
+          <div className="px-16 flex flex-row justify-between items-start mt-4 text-white min-h-screen max-h-screen z-3">
+            <div className="max-w-1/2 ml-16 sm:w-full flex flex-col pt-50">
               <h1 className="text-transform: lowercase --font-halfre  text-5xl md:text-7xl p-4">
                 Studio kreatywne
               </h1>
@@ -71,7 +71,7 @@ export default function Home() {
       <About />
       <Services />
       <Collaboration />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Contact />
     </>
   );

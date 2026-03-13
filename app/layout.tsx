@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth md:scroll-auto">
+    <html lang="pl" className="scroll-smooth md:scroll-auto">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${gloock.variable} antialiased m-0 p-0 overflow-x-hidden`}
       >

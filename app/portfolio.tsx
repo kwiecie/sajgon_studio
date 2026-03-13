@@ -13,26 +13,26 @@ export default function Portfolio() {
           Portfolio
         </h1>
 
-        <div className="flex flex-col md:flex-row justify-center gap-8 md:px-8 w-80% bg-light-blue py-10 mx-16">
+        <div className="flex flex-col md:flex-row justify-center gap-8 md:px-8 w-[80vw] bg-light-blue py-10 mx-16">
           <Image
             src="/portfolio1.jpg"
             alt=""
-            width={434}
-            height={593}
+            width={400}
+            height={553}
             className={imageClasses}
           />
           <Image
             src="/portfolio1.jpg"
             alt=""
-            width={434}
-            height={593}
+            width={400}
+            height={553}
             className={imageClasses}
           />
           <Image
             src="/portfolio1.jpg"
             alt=""
-            width={434}
-            height={593}
+            width={400}
+            height={553}
             className={imageClasses}
           />
         </div>

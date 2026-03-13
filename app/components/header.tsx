@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const lineColor = isMenuOpen || isScrolled ? "bg-accent" : "bg-white";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,16 +36,16 @@ export default function Header() {
 
         {/*desktop nav*/}
         <nav className="hidden md:flex gap-8 font-mono uppercase">
-          <a href="#about" className="hover:opacity-70 transition">
+          <a href="/about" className="hover:opacity-70 transition">
             O mnie
           </a>
-          <a href="#services" className="hover:opacity-70 transition">
+          <a href="/services" className="hover:opacity-70 transition">
             Usługi
           </a>
-          <a href="#portfolio" className="hover:opacity-70 transition">
+          <a href="/portfolio" className="hover:opacity-70 transition">
             Portfolio
           </a>
-          <a href="#contact" className="hover:opacity-70 transition">
+          <a href="/contact" className="hover:opacity-70 transition">
             Kontakt
           </a>
         </nav>
@@ -58,27 +59,23 @@ export default function Header() {
         >
           <span
             className={`block w-full h-0.5 transform transition duration-200 ${
-              isMenuOpen
-                ? "translate-y-2 rotate-45 bg-accent z-50"
-                : `${isScrolled ? "bg-accent z-50" : "bg-white"}`
-            }`}
+              isMenuOpen ? "translate-y-2 rotate-45" : ""
+            } ${lineColor}`}
           />
           <span
-            className={`block w-full h-0.5 bg-white transition duration-200 ${
-              isMenuOpen ? "opacity-0" : `${isScrolled ? "bg-accent z-50" : ""}`
-            }`}
+            className={`block w-full h-0.5 transition duration-200 ${
+              isMenuOpen ? "opacity-0" : ""
+            } ${lineColor}`}
           />
           <span
             className={`block w-full h-0.5 transform transition duration-200 ${
-              isMenuOpen
-                ? "-translate-y-2 -rotate-45 bg-accent z-50"
-                : `${isScrolled ? "bg-accent z-50" : "bg-white"}`
-            }`}
+              isMenuOpen ? "-translate-y-2 -rotate-45" : ""
+            } ${lineColor}`}
           />
         </button>
       </div>
       <div
-        className={`bg-white h-0.5 z-50 ${isMenuOpen ? "w-0 bg-accent" : "w-full"} transition-all duration-300`}
+        className={`bg-white h-0.5 z-50 w-full fixed ${lineColor} transition-colors duration-300`}
       ></div>
 
       {/*mobile menu*/}
@@ -88,28 +85,28 @@ export default function Header() {
         }`}
       >
         <a
-          href="#about"
+          href="/about"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
           O mnie
         </a>
         <a
-          href="#services"
+          href="/services"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
           Usługi
         </a>
         <a
-          href="#portfolio"
+          href="/portfolio"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
           Portfolio
         </a>
         <a
-          href="#contact"
+          href="/contact"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
