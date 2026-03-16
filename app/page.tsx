@@ -1,5 +1,5 @@
 import About from "./about";
-import Services from "./services";
+import ServicesComponent from "./services_component";
 import "./globals.css";
 import Image from "next/image";
 import Portfolio from "./portfolio";
@@ -69,7 +69,7 @@ export default function Home() {
         </main>
       </div>
       <About />
-      <Services />
+      <ServicesComponent />
       <Collaboration />
       {/* <Portfolio /> */}
       <Contact />
