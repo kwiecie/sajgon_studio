@@ -24,7 +24,7 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="mx-0 bg-background min-h-screen max-w-full flex justify-center items-center"
+      className={`mx-0 bg-background min-h-screen max-w-full flex justify-center items-center ${selectedItem ? "overflow-hidden" : ""}`}
     >
       <div className="flex flex-col gap-4 p-8 text-left max-w-full">
         <h2 className="text-4xl md:pl-16 bg-light-pink text-background lowercase w-full right-0 inline-block font-halfre px-6 py-4">
