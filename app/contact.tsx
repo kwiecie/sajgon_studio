@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const linkClasses =
-  "border-b-2 border-background font-mono md:text-xl md:font-semibold mr-8";
+  "border-b-2 border-background font-mono md:text-xl md:font-semibold mr-8 hover:border-b-2 hover:border-accent transition-colors";
 
 const tilesClasses =
   "md:w-160 md:h-40 md:pr-8 pt-4 p-4 text-right transition-transform duration-300 hover:translate-x-2";
@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section id="contact" className="mx-0 bg-background text-accent max-w-full">
       <div className="flex flex-col gap-4 p-8 text-left max-w-full">
-        <h1 className="text-4xl font-halfre md:pl-16">Skontaktuj się z nami</h1>
+        <h2 className="text-4xl font-halfre md:pl-16">Skontaktuj się z nami</h2>
         <div className="flex md:flex-row flex-col gap-0 md:px-16">
           <div className={`bg-pink ` + tilesClasses}>
             <Link href="mailto:kontakt@sajgon.pl" className={linkClasses}>

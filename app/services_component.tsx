@@ -11,7 +11,7 @@ export default function ServicesComponent() {
       className="bg-linear-to-b from-transparent from-5% to-background to-95% py-10 min-h-screen"
     >
       <div className="max-w-6xl mx-auto">
-        <div className="inline-block bg-light-pink px-6 py-4">
+        <div className="inline-block bg-light-pink px-6 py-4 w-1/2">
           <h2 className="text-3xl font-semibold text-accent mb-10">
             Co możemy razem zrobić?
           </h2>

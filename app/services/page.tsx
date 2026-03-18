@@ -15,7 +15,7 @@ export default function Services() {
             className="absolute 
                   w-50 h-50
                   rounded-full
-                  bg-linear-[105deg] from-[#EA5629] via-[#EA6851] via-[#EA8998] to-[#EA96B4]
+                  bg-linear-[230deg] from-[#EA5629] via-[#EA6851] to-[#EA96B4]
                   left-15 top-15 md:z-2"
           />
           <div

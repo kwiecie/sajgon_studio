@@ -32,7 +32,7 @@ export default function Home() {
                 className="absolute 
                   w-117 h-117
                   rounded-full
-                  bg-linear-[105deg] from-[#EA5629] via-[#EA6851] via-[#EA8998] to-[#EA96B4]
+                  bg-linear-[105deg] from-[#EA5629] via-[#EA6851] to-[#EA96B4]
                   left-0 top-15 md:z-2"
               />
               <div
@@ -71,7 +71,7 @@ export default function Home() {
       <About />
       <ServicesComponent />
       <Collaboration />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <Contact />
     </>
   );

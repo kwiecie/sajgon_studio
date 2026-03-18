@@ -36,16 +36,28 @@ export default function Header() {
 
         {/*desktop nav*/}
         <nav className="hidden md:flex gap-8 font-mono uppercase">
-          <a href="/about" className="hover:opacity-70 transition">
+          <a
+            href="/about"
+            className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
+          >
             O mnie
           </a>
-          <a href="/services" className="hover:opacity-70 transition">
+          <a
+            href="/services"
+            className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
+          >
             Usługi
           </a>
-          <a href="/portfolio" className="hover:opacity-70 transition">
+          <a
+            href="/portfolio"
+            className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
+          >
             Portfolio
           </a>
-          <a href="/contact" className="hover:opacity-70 transition">
+          <a
+            href="/contact"
+            className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
+          >
             Kontakt
           </a>
         </nav>
