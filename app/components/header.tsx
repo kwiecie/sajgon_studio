@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import logo from "../data/logo.svg";
+import HeaderLogo from "./headerLogo";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,32 +33,36 @@ export default function Header() {
             : "bg-transparent text-white"
         }`}
       >
-        <a href="/" className="text-xl font-semibold">
-          Sajgon
+        <a href="/" className="">
+          <HeaderLogo />
         </a>
 
         {/*desktop nav*/}
         <nav className="hidden md:flex gap-8 font-mono uppercase">
           <a
-            href="/about"
+            // href="/about"
+            href="#about"
             className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
           >
             O mnie
           </a>
           <a
-            href="/services"
+            // href="/services"
+            href="#services"
             className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
           >
             Usługi
           </a>
           <a
-            href="/portfolio"
+            // href="/portfolio"
+            href="#portfolio"
             className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
           >
             Portfolio
           </a>
           <a
-            href="/contact"
+            // href="/contact"
+            href="#contact"
             className={`border-b-2 border-transparent hover:border-b-2 ${isScrolled ? "hover:border-accent" : "hover:border-white"} transition-colors`}
           >
             Kontakt
@@ -87,7 +94,7 @@ export default function Header() {
         </button>
       </div>
       <div
-        className={`bg-white h-0.5 z-50 w-full fixed ${lineColor} transition-colors duration-300`}
+        className={`h-0.5 z-50 w-full fixed ${lineColor} transition-colors duration-300`}
       ></div>
 
       {/*mobile menu*/}
@@ -97,28 +104,32 @@ export default function Header() {
         }`}
       >
         <a
-          href="/about"
+          // href="/about"
+          href="#about"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
           O mnie
         </a>
         <a
-          href="/services"
+          // href="/services"
+          href="#services"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
           Usługi
         </a>
         <a
-          href="/portfolio"
+          // href="/portfolio"
+          href="#portfolio"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
           Portfolio
         </a>
         <a
-          href="/contact"
+          // href="/contact"
+          href="#contact"
           onClick={toggleMenu}
           className="border-b-2 border-transparent hover:border-b-2 hover:border-accent transition-colors"
         >
