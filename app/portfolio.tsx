@@ -5,10 +5,10 @@ import Link from "next/link";
 import Modal from "./components/modal";
 import { useState } from "react";
 import portfolio from "@/app/data/portfolio.json";
-import PortfolioItem from "./portfolioItem";
+import Banner from "./components/banner";
 
 const imageClasses =
-  "rounded-4xl w-full max-w-[360px] h-auto shadow-lg shadow-[#484293] hover:shadow-2xl hover:shadow-[#484293] transition-shadow duration-300";
+  "rounded-4xl w-full max-w-[360px] h-auto shadow-lg shadow-[#484293] hover:shadow-2xl hover:shadow-[#484293] transition-shadow duration-300 cursor-pointer";
 
 type PortfolioItemType = {
   title: string;
@@ -22,37 +22,35 @@ export default function Portfolio() {
   );
 
   return (
-    <section
-      id="portfolio"
-      className={`mx-0 bg-background min-h-screen max-w-full flex justify-center items-center ${selectedItem ? "overflow-hidden" : ""}`}
-    >
-      <div className="flex flex-col gap-4 p-8 text-left max-w-full">
-        <h2 className="text-4xl md:pl-16 bg-light-pink text-background lowercase w-full right-0 inline-block font-halfre px-6 py-4">
-          Portfolio
-        </h2>
-
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:px-8 w-[80vw] bg-light-blue py-10 mx-16">
-          {portfolio.map((item, index) => (
-            <Image
-              key={index}
-              src={item.src}
-              alt=""
-              width={400}
-              height={553}
-              className={imageClasses}
-              onClick={() => setSelectedItem(item)}
-            />
-          ))}
+    <section id="portfolio">
+      <Banner title="Portfolio" />
+      <div
+        className={`mx-0 bg-background min-h-screen max-w-full flex justify-center items-center ${selectedItem ? "overflow-hidden" : ""}`}
+      >
+        <div className="flex flex-col gap-4 p-8 text-left max-w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:px-8 w-[80vw] bg-light-blue py-10 mx-16">
+            {portfolio.map((item, index) => (
+              <Image
+                key={index}
+                src={item.src}
+                alt=""
+                width={400}
+                height={553}
+                className={imageClasses}
+                onClick={() => setSelectedItem(item)}
+              />
+            ))}
+          </div>
         </div>
+        {selectedItem && (
+          <Modal
+            onClose={() => setSelectedItem(null)}
+            title={selectedItem.title}
+            description={selectedItem.description}
+            src={selectedItem.src}
+          />
+        )}
       </div>
-      {selectedItem && (
-        <Modal
-          onClose={() => setSelectedItem(null)}
-          title={selectedItem.title}
-          description={selectedItem.description}
-          src={selectedItem.src}
-        />
-      )}
     </section>
   );
 }

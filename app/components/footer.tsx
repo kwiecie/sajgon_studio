@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="md:w-150 h-0.5 bg-white md:pl-8"></div>
         <div className="flex flex-row gap-4 md:p-8 text-left">
           <Link
-            href="https://www.instagram.com/sajgon_studio/"
+            href="https://www.instagram.com/sajgon.des/"
             target="_blank"
             rel="noopener noreferrer"
           >

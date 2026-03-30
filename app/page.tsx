@@ -13,11 +13,11 @@ export default function Home() {
       <div className="w-full  overflow-x-hidden">
         <main>
           <div className="px-16 flex flex-row justify-between items-start mt-4 text-white min-h-screen max-h-screen z-3">
-            <div className="max-w-1/2 ml-16 sm:w-full flex flex-col pt-50">
-              <h1 className="text-transform: lowercase --font-halfre  text-5xl md:text-7xl p-4">
+            <div className="max-w-1/2 ml-16 sm:w-full pt-50">
+              <h1 className="text-transform: lowercase --font-halfre text-5xl md:text-8xl p-4">
                 Studio kreatywne
               </h1>
-              <p className="font-serif --font-gloock md:text-5xl text-4xl p-4">
+              <p className="gloock-regular md:text-5xl text-4xl p-4 tracking-widest">
                 z którym opowiesz swoją historie
               </p>
               <a
@@ -44,33 +44,35 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="pl-16 min-h-screen w-full pr-0 flex flex-col md:flex-row text-accent">
-            <div className="max-w-1/2 top-[50%]">
-              <p className="text-9xl font-bold --font-halfre">+100</p>
-              <p className="text-5xl --font-halfre font-semibold">
-                projektów kreatywnych dla firm, przedsiębiorców i marek
-                osobistych
-              </p>
-            </div>
+          <div className="pl-16 min-h-screen w-full bg-linear-to-b to-background pr-0  text-accent">
+            <div className="flex flex-col md:flex-row top-[50%] translate-y-1/2 gap-16 md:gap-0">
+              <div className="max-w-1/2  pr-12">
+                <p className="text-9xl font-bold --font-halfre">+100</p>
+                <p className="text-4xl --font-halfre font-semibold">
+                  projektów kreatywnych dla firm, przedsiębiorców i marek
+                  osobistych
+                </p>
+              </div>
 
-            <ul className="w-1/2 grid grid-cols-5 gap-4 grid-rows-3">
-              {projects.projects_miniatures.map((project, index) => (
-                <li key={index} className="relative w-full aspect-square">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                </li>
-              ))}
-            </ul>
+              <ul className="w-full md:w-1/2 grid grid-cols-3 md:grid-cols-5 gap-4 ">
+                {projects.projects_miniatures.map((project, index) => (
+                  <li key={index} className="relative w-full aspect-square">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </main>
       </div>
       <About />
       <ServicesComponent />
-      <Collaboration />
+      {/* <Collaboration /> */}
       <Portfolio />
       <Contact />
     </>

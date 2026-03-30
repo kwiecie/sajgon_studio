@@ -6,10 +6,7 @@ export default function ServicesComponent() {
   const [activeIndex, setActiveIndex] = useState<number | null>(-1);
 
   return (
-    <section
-      id="services"
-      className="bg-linear-to-b from-transparent from-5% to-background to-95% py-10 min-h-screen"
-    >
+    <section id="services" className="bg-background py-10 min-h-screen">
       <div className="max-w-6xl mx-auto">
         <div className="inline-block bg-light-pink px-6 py-4 w-1/2">
           <h2 className="text-3xl font-semibold text-accent mb-10">

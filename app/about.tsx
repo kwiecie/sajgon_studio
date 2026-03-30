@@ -17,17 +17,17 @@ export default function About() {
       </div>
 
       <div className="lg:w-1/2 w-full min-h-full flex flex-col gap-4 p-2 text-left">
-        <h1 className="lg:text-5xl text-3xl --font-gloock">
+        <h1 className="md:text-5xl text-3xl gloock-regular tracking-wider">
           W zgodzie z filozofią less is more
         </h1>
-        <p className="text-small">
+        <p className="text-[24px]">
           W projektowaniu stawiam na prostotę, wysoki stopień czytelności i
           pełną transparentność na każdym etapie współpracy. Do każdego projektu
           podchodzę indywidualnie, szukając najbardziej optymalnych i
           kreatywnych rozwiązań, które odpowiadają potrzebom współczesnego
           rynku.
         </p>
-        <p>
+        <p className="text-[24px]">
           Jeśli szukasz partnera, który podejmie się wszystkiego,co tylko
           przyjdzie Ci do głowy i cenisz jasną komunikację, to dobrze trafiłeś!
         </p>

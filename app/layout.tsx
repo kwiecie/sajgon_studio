@@ -21,10 +21,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// const halfre = localFont({
-//   variable: "--font-halfre",
-//   src: "./fonts/halfrepl.ttf",
-// });
+const halfre = localFont({
+  variable: "--font-halfre",
+  src: "./fonts/HalfrePL.otf",
+});
 
 export const metadata: Metadata = {
   title: "Sajgon Studio",
@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth md:scroll-auto">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${gloock.variable} antialiased m-0 p-0 overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${gloock.variable} ${halfre.variable} antialiased m-0 p-0 overflow-x-hidden`}
       >
         <Header />
         {children}
