@@ -8,7 +8,7 @@ import portfolio from "@/app/data/portfolio.json";
 import Banner from "./components/banner";
 
 const imageClasses =
-  "rounded-4xl w-full max-w-[260px] h-auto shadow-lg shadow-[#484293] hover:shadow-2xl hover:shadow-[#484293] hover:brightness-110 transition-shadow duration-300 cursor-pointer object-cover ratio-2/3";
+  "rounded-4xl w-full max-w-[360px] h-auto shadow-lg shadow-[#484293] hover:shadow-2xl hover:shadow-[#484293] hover:brightness-110 transition-shadow duration-300 cursor-pointer object-cover ratio-2/3";
 
 type PortfolioItemType = {
   title: string;
