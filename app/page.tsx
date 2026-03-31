@@ -29,14 +29,14 @@ export default function Home() {
             </div>
             <div className="relative w-155 h-65 max-w-1/2">
               <div
-                className="hidden md:absolute
+                className="hidden md:block absolute
                   w-117 h-117
                   rounded-full
                   bg-linear-[105deg] from-[#EA5629] via-[#EA6851] to-[#EA96B4]
                   left-0 top-15 md:z-2"
               />
               <div
-                className="hidden md:absolute
+                className="hidden md:block md:absolute
                   md:w-150 md:h-150
                   rounded-full
                   border-2 border-white/90

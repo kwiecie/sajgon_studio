@@ -68,6 +68,7 @@ export default function Footer() {
       <div className=" gap-4 md:p-8 p-4 text-left">
         <div>
           <svg
+            className="w-11 h-12 md:w-22 md:h-24"
             width="88"
             height="96"
             viewBox="0 0 88 96"
