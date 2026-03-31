@@ -64,8 +64,8 @@ body {
   overflow-x: hidden;
   font-family: var(--font-halfre);
   background-image: url("../public/gradient-image.png");
-  background-size: cover;
-  background-attachment: fixed;
+  /* background-size: cover; */
+  background-attachment: scroll;
 }
 
 a {

@@ -20,14 +20,14 @@ export default function About() {
         <h1 className="md:text-5xl text-3xl gloock-regular tracking-wider">
           W zgodzie z filozofią less is more
         </h1>
-        <p className="text-[24px]">
+        <p className="text-[16px] md:text-[24px] font-light">
           W projektowaniu stawiam na prostotę, wysoki stopień czytelności i
           pełną transparentność na każdym etapie współpracy. Do każdego projektu
           podchodzę indywidualnie, szukając najbardziej optymalnych i
           kreatywnych rozwiązań, które odpowiadają potrzebom współczesnego
           rynku.
         </p>
-        <p className="text-[24px]">
+        <p className="text-[16px] md:text-[24px] font-light">
           Jeśli szukasz partnera, który podejmie się wszystkiego,co tylko
           przyjdzie Ci do głowy i cenisz jasną komunikację, to dobrze trafiłeś!
         </p>

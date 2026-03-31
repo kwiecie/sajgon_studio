@@ -175,7 +175,10 @@ export default function Footer() {
             </defs>
           </svg>
         </div>
-        © {new Date().getFullYear()} kwiecie
+        <p className="text-[10px]">
+          © {new Date().getFullYear()}{" "}
+          <a href="https://github.com/kwiecie">kwiecie</a>
+        </p>
       </div>
     </footer>
   );

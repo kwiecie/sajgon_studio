@@ -8,8 +8,8 @@ export default function ServicesComponent() {
   return (
     <section id="services" className="bg-background py-10 min-h-screen">
       <div className="max-w-6xl mx-auto">
-        <div className="inline-block bg-light-pink px-6 py-4 w-1/2">
-          <h2 className="text-3xl font-semibold text-accent mb-10">
+        <div className="inline-block bg-light-pink px-6 py-4 w-3/4 md:w-2/3">
+          <h2 className="text-2xl md:text-5xl text-accent mb-10 pl-4 md:pl-10">
             Co możemy razem zrobić?
           </h2>
         </div>
@@ -48,7 +48,7 @@ export default function ServicesComponent() {
                     isOpen ? "max-h-96 opacity-100 mt-6" : "max-h-0 opacity-0"
                   }`}
                 >
-                  <p className="text-accent text-lg leading-relaxed">
+                  <p className="text-accent text-lg leading-relaxed pt-4">
                     {service.description}
                   </p>
                 </div>

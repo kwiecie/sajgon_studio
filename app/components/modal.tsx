@@ -24,8 +24,8 @@ export default function Modal({
   return (
     <div className="fixed inset-0 overflow-y-auto min-h-screen w-full z-50">
       <div className="flex flex-row">
-        <div className="bg-[#484293] opacity-70 min-h-screen w-1/3"></div>
-        <div className="p-8 min-h-screen w-2/3 bg-background flex flex-col">
+        <div className="bg-[#484293] opacity-70 min-h-screen sm:w-0 md:w-1/3"></div>
+        <div className="p-8 min-h-screen sm:w-fullmd:w-2/3 bg-background flex flex-col">
           <div className="text-center flex flex-row justify-between px-7 py-5">
             <h3 className="text-2xl font-bold text-accent">{title}</h3>
             <button
