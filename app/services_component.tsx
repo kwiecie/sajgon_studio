@@ -55,11 +55,11 @@ export default function ServicesComponent() {
                         <path d="M6 9l6 6 6-6" />
                       </svg>
                     </button>
-                    <div className="col-start-2 col-end-4 h-px bg-accent mt-2" />
+                    <div className="col-start-1 md:col-start-2 col-end-4 h-px bg-accent mt-2" />
                     <div
-                      className={`col-start-2 col-end-4 max-w-[90%] overflow-hidden transition-all duration-500 ${
+                      className={`col-start-1 md:col-start-2 col-end-4 max-w-full md:max-w-[90%] overflow-hidden transition-all duration-500 ${
                         isOpen
-                          ? "max-h-96 opacity-100 mt-4"
+                          ? "max-h-dvh opacity-100 mt-4"
                           : "max-h-0 opacity-0"
                       }`}
                     >
