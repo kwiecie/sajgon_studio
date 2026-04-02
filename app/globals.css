@@ -24,6 +24,7 @@
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-gloock);
   --font-halfre: var(--font-halfre);
+  --font-fira-mono: var(--font-fira-mono);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -49,6 +50,12 @@
 .halfre {
   font-family: "Halfre", sans-serif;
   font-weight: normal;
+  font-style: normal;
+}
+
+.fira-mono-regular {
+  font-family: "Fira Mono", monospace;
+  font-weight: 400;
   font-style: normal;
 }
 

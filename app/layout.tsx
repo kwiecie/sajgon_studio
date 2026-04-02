@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Gloock } from "next/font/google";
+import { Geist, Geist_Mono, Gloock, Fira_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/header";
@@ -26,6 +26,12 @@ const halfre = localFont({
   src: "./fonts/HalfrePL.otf",
 });
 
+const firaMono = Fira_Mono({
+  variable: "--font-fira-mono",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Sajgon Studio",
   description: "Kreatywne studio dla firm i marek osobistych",
@@ -39,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="pl" className="scroll-smooth md:scroll-auto">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${gloock.variable} ${halfre.variable} antialiased m-0 p-0 overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${gloock.variable} ${halfre.variable} ${firaMono.variable} antialiased m-0 p-0 overflow-x-hidden`}
       >
         <Header />
         {children}
