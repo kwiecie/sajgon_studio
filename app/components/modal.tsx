@@ -30,9 +30,10 @@ export default function Modal({
             <h3 className="text-2xl font-bold text-accent">{title}</h3>
             <button
               onClick={onClose}
-              className="w-9 h-9 justify-center items-center rounded-md"
+              className="w-8 h-6 justify-center items-center rounded-md"
             >
               <span className="block w-full h-0.5 bg-accent rotate-45"></span>
+              <span className="block w-full h-0.5 opacity-0"></span>
               <span className="block w-full h-0.5 bg-accent -rotate-45"></span>
             </button>
           </div>

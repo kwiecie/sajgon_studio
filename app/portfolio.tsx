@@ -1,14 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import Modal from "./components/modal";
 import { useState } from "react";
 import portfolio from "@/app/data/portfolio.json";
 import Banner from "./components/banner";
-
-const imageClasses =
-  "rounded-4xl w-full max-w-[360px] h-auto shadow-lg shadow-[#484293] hover:shadow-2xl hover:shadow-[#484293] hover:brightness-110 transition-shadow duration-300 cursor-pointer object-cover ratio-2/3";
 
 type PortfolioItemType = {
   title: string;
@@ -27,18 +23,42 @@ export default function Portfolio() {
       <div
         className={`mx-0 bg-background min-h-screen max-w-full flex justify-center items-center ${selectedItem ? "overflow-hidden" : ""}`}
       >
-        <div className="flex flex-col gap-4 p-8 text-left max-w-full">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:px-8 w-[80vw] bg-light-blue py-10 mx-16">
+        <div className="w-full max-w-6xl mx-auto mt-6 mb:mt-12 py-6 mb:py-10 bg-light-blue">
+          {/* mobile view */}
+          <div className="flex md:hidden max-w-7xl gap-4 overflow-x-auto pb-4 snap-x snap-mandatory px-4">
             {portfolio.map((item, index) => (
-              <Image
+              <div
                 key={index}
-                src={item.src}
-                alt=""
-                width={400}
-                height={553}
-                className={imageClasses}
+                className="relative shrink-0 w-[85%] rounded-3xl aspect-2/3 snap-start cursor-pointer shadow-lg shadow-[#484293] hover:brightness-110 transition-shadow duration-300"
                 onClick={() => setSelectedItem(item)}
-              />
+              >
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  fill
+                  //sizes="75vw"
+                  className="object-cover rounded-3xl"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* desktop view*/}
+          <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-20">
+            {portfolio.map((item, index) => (
+              <div
+                key={index}
+                className="relative w-[120%] -translate-x-8 aspect-2/3 overflow-hidden cursor-pointer group rounded-3xl shadow-lg shadow-[#484293] hover:shadow-2xl hover:shadow-[#484293] transition-all duration-300 group-hover:shadow-2xl group hover:brightness-110"
+                onClick={() => setSelectedItem(item)}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover rounded-3xl"
+                />
+              </div>
             ))}
           </div>
         </div>

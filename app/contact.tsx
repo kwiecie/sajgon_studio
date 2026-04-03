@@ -9,11 +9,11 @@ const tilesClasses =
 export default function Contact() {
   return (
     <section id="contact" className="mx-0 bg-background text-accent max-w-full">
-      <div className="flex flex-col gap-4 p-8 text-left max-w-full">
+      <div className="flex flex-col  gap-4 p-8 text-left max-w-full">
         <h2 className="text-4xl font-halfre md:pl-16 hidden">
           Skontaktuj się z nami
         </h2>
-        <div className="flex md:flex-row flex-col gap-0 md:px-16">
+        <div className="flex md:flex-row flex-col justify-center gap-0 md:px-16">
           <div className={`bg-pink ` + tilesClasses}>
             <Link href="mailto:kontakt@sajgon.pl" className={linkClasses}>
               napisz

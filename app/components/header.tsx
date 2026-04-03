@@ -99,8 +99,8 @@ export default function Header() {
 
       {/*mobile menu*/}
       <nav
-        className={`md:hidden fixed top-16 left-0 w-full bg-white text-accent flex flex-col items-center gap-8 font-mono uppercase transition-all duration-300 ${
-          isMenuOpen ? "h-[calc(100vh-64px)] py-12 z-50" : "h-0 overflow-hidden"
+        className={`md:hidden fixed top-15 left-0 w-full bg-white text-accent flex flex-col items-center gap-8 font-mono uppercase transition-all duration-300 ${
+          isMenuOpen ? "h-[calc(100vh-60px)] py-12 z-40" : "h-0 overflow-hidden"
         }`}
       >
         <a

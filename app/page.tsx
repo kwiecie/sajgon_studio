@@ -70,13 +70,13 @@ export default function Home() {
               </ul>
             </div>
           </div>
+          <About />
+          <ServicesComponent />
+          {/* <Collaboration /> */}
+          <Portfolio />
+          <Contact />
         </main>
       </div>
-      <About />
-      <ServicesComponent />
-      {/* <Collaboration /> */}
-      <Portfolio />
-      <Contact />
     </>
   );
 }
