@@ -14,19 +14,19 @@ export default function ServicesComponent() {
   return (
     <section id="services" className="bg-background py-10 min-h-screen">
       <div className="max-w-full mx-auto">
-        <div className="inline-block bg-light-pink px-6 py-4 w-3/4 md:w-2/3">
-          <h2 className="text-2xl md:text-5xl text-accent mb-10 pl-4 md:pl-10">
+        <div className="inline-block bg-light-pink px-6 w-3/4 md:w-2/3">
+          <h2 className="text-2xl md:text-5xl text-accent my-2 md:my-4 pl-4 md:pl-10">
             Co możemy razem zrobić?
           </h2>
         </div>
 
-        <div className="px-4 pt-10 flex justify-center items-center">
+        <div className="px-4 pt-4 flex justify-center items-center">
           <div className="w-full max-w-5xl mx-auto">
             {services.map((service, index) => {
               const isOpen = openIndexes.includes(index);
 
               return (
-                <div key={index} className="mb-10 p-4 w-full">
+                <div key={index} className="p-4 w-full">
                   <div className="grid grid-cols-[60px_1fr_40px] w-full">
                     <span className="text-accent font-mono text-xl tabular-nums">
                       {(index + 1).toString().padStart(2, "0")}

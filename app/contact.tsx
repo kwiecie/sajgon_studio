@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const linkClasses =
-  "border-b-2 border-background font-mono md:text-xl md:font-semibold mr-8 hover:border-b-2 hover:border-accent transition-colors";
+  "border-b-2 border-background font-mono md:text-xl md:font-semibold mr-2 hover:border-b-2 hover:border-accent transition-colors";
 
 const tilesClasses =
-  "md:w-160 md:h-40 md:pr-8 pt-4 p-4 text-right transition-transform duration-300 hover:translate-x-2";
+  "md:w-160 md:h-32 md:pr-4 pt-4 p-4 text-right transition-transform duration-300 hover:translate-x-2";
 
 export default function Contact() {
   return (

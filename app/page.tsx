@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <div className="overflow-x-hidden">
         <main>
-          <div className="px-6 flex flex-col md:flex-row justify-between items-center md:items-start mt-8 text-white h-[60vh] md:min-h-screen">
+          <div className="px-6 flex flex-col md:flex-row justify-between items-center md:items-start mt-8 text-white sm:h-[60vh] md:min-h-screen">
             <div className="w-full md:w-1/2 md:pl-10 md:ml-10 pt-10 md:pt-32 lg:pt-50 text-left">
               <h1 className="text-transform: lowercase --font-halfre text-5xl md:text-7xl lg:text-8xl">
                 Studio kreatywne

@@ -23,20 +23,20 @@ export default function Portfolio() {
       <div
         className={`mx-0 bg-background min-h-screen max-w-full flex justify-center items-center ${selectedItem ? "overflow-hidden" : ""}`}
       >
-        <div className="w-full max-w-6xl mx-auto mt-6 mb:mt-12 py-6 mb:py-10 bg-light-blue">
+        <div className="w-full max-w-6xl md:mx-auto mt-6 lg:mt-12 py-8 lg:py-16 bg-light-blue">
           {/* mobile view */}
-          <div className="flex md:hidden max-w-7xl gap-4 overflow-x-auto pb-4 snap-x snap-mandatory px-4">
+          <div className="flex md:hidden max-w-6xl gap-4 overflow-x-auto no-scrollbar pb-4 snap-x snap-mandatory">
             {portfolio.map((item, index) => (
               <div
                 key={index}
-                className="relative shrink-0 w-[85%] rounded-3xl aspect-2/3 snap-start cursor-pointer shadow-lg shadow-[#484293] hover:brightness-110 transition-shadow duration-300"
+                className="relative shrink-0 w-[75%] ml-4 rounded-3xl aspect-2/3 snap-start cursor-pointer shadow-lg shadow-[#484293] hover:brightness-110 transition-shadow duration-300"
                 onClick={() => setSelectedItem(item)}
               >
                 <Image
                   src={item.src}
                   alt={item.title}
                   fill
-                  //sizes="75vw"
+                  sizes="75vw"
                   className="object-cover rounded-3xl"
                 />
               </div>
@@ -55,7 +55,7 @@ export default function Portfolio() {
                   src={item.src}
                   alt={item.title}
                   fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 468px) 50vw, 33vw"
                   className="object-cover rounded-3xl"
                 />
               </div>
